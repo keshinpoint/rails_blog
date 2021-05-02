@@ -52,7 +52,9 @@ group :development do
   gem 'spring'
 
   gem 'guard', '~> 2.16', '>= 2.16.2'
-  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
+  # added from tutorial, makes errors user friendly
+  gem 'better_errors', '~> 2.9', '>= 2.9.1'
 end
 
 group :test do
